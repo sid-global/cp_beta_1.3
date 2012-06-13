@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cor Processu Mobile</title>
+<link href="ccs/jquery-mobile/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css">
+<script src="ccs/jquery-mobile/jquery-1.5.min.js" type="text/javascript"></script>
+<script src="ccs/jquery-mobile/interpretadorAjax.js" type="text/javascript"></script>
+<script src="ccs/jquery-mobile/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
+<script src="lib/funciones.js" type="text/javascript"></script>
+</head>
+
+<body onLoad="cargarTareasTS()">
+<!-- Carga de datos -->
+<div data-role="page" id="Login">
+	<div data-role="header">
+		<h1>Consulta de Tareas (Vencidas)</h1>
+	</div>
+    <div data-role="content">
+    	<center>
+    		<img src="images/cargando.gif">	
+	    	<p style="font-style:italic"> Cargando datos </p>
+        </center>
+    </div>
+	<div data-theme="a" data-role="footer" data-position="fixed">
+   	  <div data-role="navbar" data-iconpos="top">
+         <ul>
+           	<li><a onClick="redireccionar('index.html\#menu_principal')">Regresar</a></li>
+            <li><a onClick="sid()">SID, C.A.</a></li>
+            <li><a onClick="salir()">Salir</a></li>
+         </ul>
+      </div>
+   </div>
+</div>
+<!------- Carga de datos -->
+
+<!-- TimeSheet -->
+<div data-role="page" id="timeSheet">
+	<div data-role="header">
+		<h1>TimeSheet</h1>
+	</div>
+	<div data-role="content" id="Empresa" aling="center">	
+		<div id="timesheet">
+	    </div>
+	</div>
+<div data-theme="a" data-role="footer" data-position="fixed">
+   	  <div data-role="navbar" data-iconpos="top">
+         <ul>
+           	<li><a onClick="redireccionar('index.html\#menu_principal')">Regresar</a></li>
+            <li><a onClick="sid()">SID, C.A.</a></li>
+            <li><a onClick="salir()">Salir</a></li>
+         </ul>
+      </div>
+   </div>
+</div>
+<!------- TimeSheet -->
+
+</body>
+</html>
